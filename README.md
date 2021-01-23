@@ -23,7 +23,10 @@ candidates.head()
 
 I needed a new csv file that have the unique patient ID and the class only (patient count 888 only).
 first I created a csv file named (names.csv) that contain the patient ID only by using the following linux command
-dir$ find . -type f -name "*.mhd" -execdir basename {} \; > names.csv
+
+
+> dir$ find . -type f -name "*.mhd" -execdir basename {} \; > names.csv
+
 
 then I run the python code to search and compare between names.csv and candidatesv2.csv.
 the code search for patient name in candidate if exist that mean the patient have cancer and add 1 to the status
